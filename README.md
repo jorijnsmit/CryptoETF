@@ -41,12 +41,22 @@ The tool expects your settings in `settings.json`. Take a look at `settings.exam
   - `targetValueUsd`: The target value for your ETF. A general rule of thumb is to keep your crypto at a certain percentage of your overall investment portfolio. This could be 5, 10, 20 or more percent, depending on your risk tolerance.
     - Default [false]: Use current portfolio value as target value.
     - Number [1 - 999999999999]: Use fixed number as target value.
+<<<<<<< HEAD
   - `rebalanceDeltaTotalPct`: Threshold in percent, that will show a Y in the rebalance column, once rebalancing of total portfolio is recommended.
   - `rebalanceDeltaPct`: Threshold in percent, that will show a Y in the rebalance column, once rebalancing of individual position is recommended.
   - `minValueBtc`: Ignore coins that have a holding value lower than this. Be sure to set this to 0 when you want to display missing coins (by setting `hideMissingCoins` to `false`).
   - `exchangeMinValueBtc`: Don't list exchanges in the exchanges column, with less than the specified BTC value. The complete holding value will still be added in the total sum.
   - `hideMissingCoins`: By default CryptoETF will add all missing coins up to your last coin holding by rank of the coin (global market cap). This option disables that behaviour.
 - *outputFile*: Path to a file to forward the output to as JSON.
+=======
+  - rebalanceDeltaTotalPct: Treshold in percent, that will show a Y in the rebalance column, once rebalancing of total portfolio is recommended.
+  - rebalanceDeltaPct: Treshold in percent, that will show a Y in the rebalance column, once rebalancing of individual position is recommended.
+  - minValueBtc: Ignore coins that only have a holdingsvalue under a certain bitcoin value.
+  - exchangeMinValueBtc: Don't list exchanges in the exchanges column, with less than the specified BTC value. The complete holding value will still be added in the total sum.
+  - hideMissingCoins: By default CryptoETF will add all missing coins up to your last coin holding by rank of the coin (global market cap). This option disables that behaviour.
+  - `compactMode`: This mode will abbreviate the table's headers and exchange names to minimise its total width.
+- *outputFile*: Path to a file to forward the output to as json.
+>>>>>>> feat_compactMode
 
 ## Test
 - `npm test` To run all the unit tests, without the integrations, which require api keys.
